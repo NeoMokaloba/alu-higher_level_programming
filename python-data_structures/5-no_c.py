@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-def print_reversed_list_integer(my_list=[]):
-    if not my_list:
-        pass
-    else:
-        my_list.reverse()
-        for a in range(len(my_list)):
-            print("{:d}".format(my_list[a]))
+def no_c(my_string):
+    result = ""
+    for char in my_string:
+        if char.lower() != 'c':
+            result += char
+    return result
