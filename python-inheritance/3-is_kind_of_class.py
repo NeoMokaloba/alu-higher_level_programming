@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-'''Defines function is_same_class
+'''Defines function is_kind_of_class
 '''
 
 
-def is_same_class(obj, a_class):
-    '''Returns true if obj is an instance of type a_class
+def is_kind_of_class(obj, a_class):
+    '''Check if obj is an instance of an instace of a sub
+    class of a_class and returns true
     '''
-    return(type(obj) == a_class)
+    return isinstance(obj, a_class)
